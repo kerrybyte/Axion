@@ -5,9 +5,9 @@
   --bg: #0a0f1a;
   --bg-alt: #111827;
   --fg: #eaf1ff;
-  --muted: #b7c0d4;
+  --muted: #cbd6ea;
   --card: #121a2c;
-  --border: #24324a;
+  --border: #2a3a56;
   --accent: #788bff;
   --accent-2: #9fa0ff;
   --accent-3: #758bfd;
@@ -17,18 +17,18 @@
   --nav-bg: linear-gradient(120deg, rgba(7, 11, 20, 0.98), rgba(12, 18, 32, 0.94));
   --nav-border: rgba(79, 214, 255, 0.18);
   --nav-text: #f4f7ff;
-  --nav-muted: rgba(201, 214, 238, 0.72);
+  --nav-muted: rgba(220, 232, 255, 0.8);
   --nav-pill: rgba(10, 14, 24, 0.6);
   --nav-pill-border: rgba(79, 214, 255, 0.12);
   --nav-shadow: 0 18px 32px rgba(5, 8, 16, 0.55);
-  --nav-item: 50px;
-  --nav-icon: 50px;
-  --nav-icon-large: 50px;
-  --nav-profile: 50px;
-  --nav-menu-w: 50px;
-  --nav-menu-h: 50px;
+  --nav-item: 54px;
+  --nav-icon: 54px;
+  --nav-icon-large: 54px;
+  --nav-profile: 54px;
+  --nav-menu-w: 54px;
+  --nav-menu-h: 54px;
   --nav-gap: 6px;
-  --nav-height: 58px;
+  --nav-height: 64px;
 }
 
 * {
@@ -85,7 +85,7 @@ a {
   align-items: center;
   justify-content: space-between;
   gap: 12px;
-  padding: 4px 0.6vw;
+  padding: 6px 1.4vw;
   min-height: var(--nav-height);
   flex-wrap: nowrap;
 }
@@ -118,8 +118,8 @@ a {
 .brand-mark {
   display: grid;
   place-items: center;
-  width: clamp(130px, 14vw, 180px);
-  height: 95px;
+  width: clamp(96px, 10vw, 140px);
+  height: 72px;
   margin-top: 0;
   border-radius: 14px;
   background: transparent;
@@ -135,7 +135,7 @@ a {
 
 .brand-text {
   position: relative;
-  font-size: clamp(2.24rem, 3.44vw, 3.04rem);
+  font-size: clamp(1.6rem, 2.3vw, 2.25rem);
   line-height: 1;
   color: var(--nav-text);
   transition: color 0.3s ease;
@@ -308,9 +308,9 @@ a {
 }
 
 .nav-actions .ghost-button {
-  background: rgba(79, 214, 255, 0.12);
-  border: 1px solid rgba(79, 214, 255, 0.3);
-  color: var(--nav-text);
+  background: rgba(120, 139, 255, 0.22);
+  border: 1px solid rgba(120, 139, 255, 0.4);
+  color: var(--fg);
   padding: 10px 20px;
   border-radius: 999px;
   font-weight: 600;
@@ -322,7 +322,11 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 18px;
   padding: 0 6vw;
-  background: rgba(7, 11, 20, 0.98);
+  position: absolute;
+  top: var(--nav-height);
+  left: 0;
+  right: 0;
+  background: rgba(6, 10, 18, 0.98);
   border-bottom: 1px solid rgba(79, 214, 255, 0.18);
   box-shadow: 0 18px 30px rgba(5, 8, 16, 0.45);
   max-height: 0;
@@ -331,6 +335,7 @@ a {
   pointer-events: none;
   transform: translateY(-14px);
   transition: max-height 0.45s ease, opacity 0.35s ease, transform 0.35s ease;
+  z-index: 18;
 }
 
 .mobile-menu.open {
@@ -356,6 +361,7 @@ a {
 .mobile-menu a {
   color: var(--nav-text);
   font-weight: 600;
+  padding: 4px 0;
 }
 .mobile-toggle {
   display: flex;
@@ -450,6 +456,17 @@ a {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 40px;
   align-items: center;
+}
+
+.hero-grid--single {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 720px;
+  margin-left: clamp(12px, 2vw, 24px);
+  align-items: flex-start;
+}
+
+.hero-copy {
+  max-width: 640px;
 }
 
 .hero-copy h1 {
@@ -957,12 +974,12 @@ a {
 
 @media (max-width: 928px) {
   body {
-    --nav-item: 50px;
-    --nav-icon: 50px;
-    --nav-icon-large: 50px;
-    --nav-profile: 50px;
-    --nav-menu-w: 50px;
-    --nav-menu-h: 50px;
+    --nav-item: 48px;
+    --nav-icon: 48px;
+    --nav-icon-large: 48px;
+    --nav-profile: 48px;
+    --nav-menu-w: 48px;
+    --nav-menu-h: 48px;
     --nav-gap: 6px;
     --nav-height: 56px;
   }
@@ -974,7 +991,7 @@ a {
 
 
   .brand-text {
-    font-size: clamp(1.52rem, 2.4vw, 1.92rem);
+    font-size: clamp(1.4rem, 2.2vw, 1.8rem);
   }
 
   .nav-actions .ghost-button {
