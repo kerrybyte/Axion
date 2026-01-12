@@ -5,33 +5,46 @@ const mobileToggles = document.querySelectorAll("[data-mobile-toggle]");
 const mobilePanels = document.querySelectorAll("[data-mobile-panel]");
 const quoteText = document.getElementById("quote-text");
 const quoteAuthor = document.getElementById("author-name");
+const quotes = [
+  {
+    text: "Somewhere, something incredible is waiting to be known.",
+    author: "Carl Sagan",
+  },
+  {
+    text: "Equations are the poetry of the universe.",
+    author: "Neil deGrasse Tyson",
+  },
+  {
+    text: "The universe is not only queerer than we suppose, but queerer than we can suppose.",
+    author: "J.B.S. Haldane",
+  },
+  {
+    text: "The important thing is not to stop questioning.",
+    author: "Albert Einstein",
+  },
+];
+let quoteIndex = 0;
 
-const getNewQuote = async () => {
-  try {
-    const response = await fetch("https://api.quotable.io/random?tags=science");
-    if (!response.ok) {
-      throw new Error("Quote request failed");
-    }
-    const data = await response.json();
-    if (quoteText) {
-      quoteText.innerText = `"${data.content}"`;
-    }
-    if (quoteAuthor) {
-      quoteAuthor.innerText = `- ${data.author}`;
-    }
-  } catch (error) {
-    if (quoteText) {
-      quoteText.innerText = "\"Somewhere, something incredible is waiting to be known.\"";
-    }
-    if (quoteAuthor) {
-      quoteAuthor.innerText = "- Carl Sagan";
-    }
+const setQuote = (quote) => {
+  if (quoteText) {
+    quoteText.innerText = `"${quote.text}"`;
+  }
+  if (quoteAuthor) {
+    quoteAuthor.innerText = `- ${quote.author}`;
   }
 };
 
+const rotateQuote = () => {
+  quoteIndex = (quoteIndex + 1) % quotes.length;
+  setQuote(quotes[quoteIndex]);
+};
+
 const startQuoteRotation = () => {
-  getNewQuote();
-  setInterval(getNewQuote, 10000);
+  if (!quoteText || !quoteAuthor) {
+    return;
+  }
+  setQuote(quotes[quoteIndex]);
+  setInterval(rotateQuote, 10000);
 };
 
 brand?.addEventListener("click", () => {
