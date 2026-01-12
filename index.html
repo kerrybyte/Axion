@@ -1,133 +1,15 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Axion | Physics Lab</title>
-  <!-- favicon removed to avoid binary assets -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body data-theme="dark" data-page="home">
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html" data-brand>
-        <span class="brand-mark brand-mark--text">AX</span>
-        <span class="brand-text">Axion</span>
-      </a>
-      <nav class="nav-shell" aria-label="Primary">
-        <div class="nav-center">
-          <a class="nav-link" href="#console">Home</a>
-          <a class="nav-link" href="#modules">Modules</a>
-          <a class="nav-link" href="#docs">Docs</a>
-          <a class="nav-link" href="#settings">Settings</a>
-        </div>
-      </nav>
-      <div class="nav-actions">
-        <button class="ghost-button" type="button">Sign up</button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="lab-shell" id="console">
-      <div class="container lab-grid">
-        <div id="archon-panel" class="archon-panel glass glow-accent">
-          <div class="archon-avatar-wrap">
-            <div id="archon-sprite" class="archon-sprite" role="img" aria-label="ArchonX"></div>
-          </div>
-          <div id="archon-speech" class="archon-speech-bubble">
-            Hello, I’m ArchonX. Ask me something about physics!
-          </div>
-        </div>
-
-        <section id="xsuper-console" class="xsuper-console glass">
-          <header class="console-header">
-            <h2>XSuper Console</h2>
-            <div class="console-modes" role="tablist" aria-label="Console modes">
-              <button data-mode="graphs" class="mode-btn active" type="button">Graphs</button>
-              <button data-mode="scenes" class="mode-btn" type="button">Scenes</button>
-              <button data-mode="explain" class="mode-btn" type="button">Explain</button>
-            </div>
-          </header>
-
-          <div class="console-body">
-            <canvas id="graphCanvas" class="console-canvas" aria-label="Graph canvas"></canvas>
-            <canvas id="sceneCanvas" class="console-canvas hidden" aria-label="Scene canvas"></canvas>
-            <div id="explainPanel" class="console-explain hidden">
-              <h3>Explanation</h3>
-              <div id="explainText"></div>
-              <div id="formulaBox" class="formula-box"></div>
-              <ul id="explainBullets" class="explain-bullets"></ul>
-            </div>
-          </div>
-
-          <footer class="console-footer">
-            <div class="console-status" id="consoleStatus">Ready.</div>
-          </footer>
-        </section>
-
-        <aside class="control-panel glass" id="modules">
-          <h3>Controls</h3>
-          <p class="muted">Ask a physics question or choose a module to launch a scene.</p>
-          <form id="topicForm" class="control-form">
-            <label for="topicInput">Topic</label>
-            <input
-              id="topicInput"
-              name="topic"
-              type="text"
-              placeholder="Ask a physics question or type a topic (e.g. projectile motion, gravity, orbits)."
-              autocomplete="off"
-            />
-            <label for="moduleSelect">Module</label>
-            <select id="moduleSelect" name="module">
-              <option value="projectile">Kinematics (Projectile)</option>
-              <option value="block_push">Forces (Block Push)</option>
-              <option value="orbit">Orbits (Satellite)</option>
-            </select>
-            <div class="slider-group">
-              <label for="speedInput">Initial speed</label>
-              <input id="speedInput" name="speed" type="range" min="5" max="40" value="22" />
-            </div>
-            <div class="slider-group">
-              <label for="angleInput">Launch angle</label>
-              <input id="angleInput" name="angle" type="range" min="15" max="75" value="45" />
-            </div>
-            <button class="primary-button" type="submit">Run</button>
-          </form>
-          <div class="control-hint" id="settings">
-            Adjust parameters, then switch Graphs or Scenes to explore the results.
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="docs" id="docs">
-      <div class="container docs-grid">
-        <div>
-          <h2>Research notes</h2>
-          <p>Document assumptions, limitations, and key equations for each module.</p>
-        </div>
-        <div class="docs-cards">
-          <div class="docs-card">
-            <h4>assumptions.md</h4>
-            <p>No air resistance, ideal springs, small-angle pendulum.</p>
-          </div>
-          <div class="docs-card">
-            <h4>limitations.md</h4>
-            <p>Numerical error and boundary conditions.</p>
-          </div>
-          <div class="docs-card">
-            <h4>numerical-errors.md</h4>
-            <p>Time-step sensitivity and drift.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <script type="module" src="app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Axion</title>
+    <meta http-equiv="refresh" content="0; url=Home_page.html" />
+    <link rel="canonical" href="Home_page.html" />
+  </head>
+  <body>
+    <p>
+      Redirecting to <a href="Home_page.html">Home</a>.
+    </p>
+  </body>
 </html>
