@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axion | Search</title>
+  <link rel="icon" type="image/jpeg" href="../assets/webi-cone.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body data-theme="dark" data-page="search">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="Home_page.html" data-brand>
+        <span class="brand-mark">
+          <img class="brand-logo" src="../assets/LOGO_Axion.png" alt="Axion logo" />
+        </span>
+        <span class="brand-text">Axion</span>
+      </a>
+            <div class="nav-actions">
+        <a class="nav-icon nav-icon--search" href="Search_page.html" aria-label="Search">
+          <img src="../assets/Search_navbar.png" alt="" />
+          <span class="sr-only">Search</span>
+        </a>
+        <button class="ghost-button" type="button">Sign up</button>
+        <a class="icon-button" href="Setting_page.html" aria-label="Settings">
+          <img src="../assets/Setting_navbar.png" alt="" />
+        </a>
+        <a class="icon-button profile-button" href="Profile_page.html" aria-label="Profile">
+          <img src="../assets/Profile_navbar.png" alt="" />
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <img src="../assets/Menu_drop.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="mobile-section">
+      <button class="mobile-toggle" type="button" data-mobile-toggle="explore" aria-expanded="false">
+        Explore
+        <span class="mobile-toggle-icon">+</span>
+      </button>
+      <div class="mobile-links" data-mobile-panel="explore">
+        <a href="Home_page.html#labs">Classical Mechanics</a>
+        <a href="Home_page.html#labs">Waves</a>
+        <a href="Home_page.html#labs">Oscillations</a>
+        <a href="Home_page.html#labs">Energy</a>
+        <a href="Home_page.html#labs">Orbits</a>
+      </div>
+    </div>
+    <div class="mobile-section">
+      <button class="mobile-toggle" type="button" data-mobile-toggle="navigate" aria-expanded="false">
+        Navigate
+        <span class="mobile-toggle-icon">+</span>
+      </button>
+      <div class="mobile-links" data-mobile-panel="navigate">
+        <a href="Home_page.html#docs">Notes</a>
+        <a href="Home_page.html#about">About</a>
+      </div>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-title">Account</span>
+      <a href="Profile_page.html">Profile</a>
+      <a href="Setting_page.html">Settings</a>
+      <button class="mobile-action" type="button">Sign up</button>
+    </div>
+  </div>
+
+  <main class="search-page">
+    <section class="search-hero">
+      <div class="container">
+        <h1>Search results</h1>
+        <p>Pick a module and open Xsuper to launch the simulation.</p>
+      </div>
+    </section>
+
+    <section class="container search-layout">
+      <div class="xsuper-window">
+        <div class="window-header">Xsuper Animation Console</div>
+        <div class="window-body"></div>
+        <div class="window-actions">
+          <button class="primary-button" type="button">Wave View</button>
+          <button class="outline-button" type="button">Graph View</button>
+          <button class="outline-button" type="button">Explain View</button>
+        </div>
+      </div>
+      <div class="linked-window">
+        <div class="window-header">Linked Analysis</div>
+        <div class="window-body"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">Back to top</div>
+    <div class="container footer-grid">
+      <div>
+        <h4>Explore</h4>
+        <a href="Home_page.html#labs">Labs</a>
+        <a href="Home_page.html#docs">Notes</a>
+        <a href="Home_page.html#about">About</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Support</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>Axion Physics Lab</span>
+      <span>For learning and research use only.</span>
+    </div>
+  </footer>
+
+  <div class="ai-fab" aria-label="Archon AI assistant">
+    <img class="ai-avatar" src="../assets/Archon_Chatbot.png" alt="Archon AI assistant" />
+    <div class="ai-text">
+      <strong>ARCHON</strong>
+      <small>AI guide</small>
+    </div>
+  </div>
+
+  <script src="../JS/app.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

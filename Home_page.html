@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Axion | Home</title>
+  <link rel="icon" type="image/jpeg" href="../assets/webi-cone.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body data-theme="dark" data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="Home_page.html" data-brand>
+        <span class="brand-mark">
+          <img class="brand-logo" src="../assets/LOGO_Axion.png" alt="Axion logo" />
+        </span>
+        <span class="brand-text">Axion</span>
+      </a>
+            <div class="nav-actions">
+        <a class="nav-icon nav-icon--search" href="Search_page.html" aria-label="Search">
+          <img src="../assets/Search_navbar.png" alt="" />
+          <span class="sr-only">Search</span>
+        </a>
+        <button class="ghost-button" type="button">Sign up</button>
+        <a class="icon-button" href="Setting_page.html" aria-label="Settings">
+          <img src="../assets/Setting_navbar.png" alt="" />
+        </a>
+        <a class="icon-button profile-button" href="Profile_page.html" aria-label="Profile">
+          <img src="../assets/Profile_navbar.png" alt="" />
+        </a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+          <img src="../assets/Menu_drop.png" alt="" />
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu>
+    <div class="mobile-section">
+      <button class="mobile-toggle" type="button" data-mobile-toggle="explore" aria-expanded="false">
+        Explore
+        <span class="mobile-toggle-icon">+</span>
+      </button>
+      <div class="mobile-links" data-mobile-panel="explore">
+        <a href="#labs">Classical Mechanics</a>
+        <a href="#labs">Waves</a>
+        <a href="#labs">Oscillations</a>
+        <a href="#labs">Energy</a>
+        <a href="#labs">Orbits</a>
+      </div>
+    </div>
+    <div class="mobile-section">
+      <button class="mobile-toggle" type="button" data-mobile-toggle="navigate" aria-expanded="false">
+        Navigate
+        <span class="mobile-toggle-icon">+</span>
+      </button>
+      <div class="mobile-links" data-mobile-panel="navigate">
+        <a href="#docs">Notes</a>
+        <a href="#about">About</a>
+      </div>
+    </div>
+    <div class="mobile-section">
+      <span class="mobile-title">Account</span>
+      <a href="Profile_page.html">Profile</a>
+      <a href="Setting_page.html">Settings</a>
+      <button class="mobile-action" type="button">Sign up</button>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Classical Physics Workspace</p>
+          <h1>Axion turns physics into a living lab.</h1>
+          <p class="lead">
+            Explore motion, waves, energy, and orbits with animated models and real-time graphs.
+            Every module documents its assumptions and limitations.
+          </p>
+          <div class="hero-actions">
+            <button class="primary-button" type="button">Launch Lab</button>
+            <button class="outline-button" type="button">View Documentation</button>
+          </div>
+        </div>
+        <div class="hero-panel">
+          <div class="panel-header">
+            <span>Live Console</span>
+            <span class="panel-tag">Xsuper</span>
+          </div>
+          <div class="panel-body">
+            <div class="console-window">
+              <div class="console-title">Simulation</div>
+              <div class="console-screen">
+                <div class="orbit-path"></div>
+                <div class="orbit-body"></div>
+                <div class="wave-line"></div>
+              </div>
+            </div>
+            <div class="console-stack">
+              <div class="mini-card">x - t</div>
+              <div class="mini-card">v - t</div>
+              <div class="mini-card">Energy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="search-section" id="search">
+      <div class="container search-grid">
+        <div>
+          <h2>Find a module fast</h2>
+          <p>Search the lab and jump to the exact simulation you need.</p>
+        </div>
+        <div class="search-bar">
+          <input type="search" placeholder="Search classical mechanics, waves, orbits" aria-label="Search the lab" />
+          <button class="primary-button" type="button">Search</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="labs" id="labs">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Featured labs</h2>
+          <p>Each module includes animation, graphs, and documentation.</p>
+        </div>
+        <div class="card-grid">
+          <article class="feature-card">
+            <h3>Wave Lab</h3>
+            <p>Adjust amplitude, frequency, and wavelength with live snapshots.</p>
+            <button class="ghost-button" type="button">Open Wave Lab</button>
+          </article>
+          <article class="feature-card">
+            <h3>SHM Kinematics</h3>
+            <p>Spring-mass or pendulum with x - t, v - t, and energy graphs.</p>
+            <button class="ghost-button" type="button">Open SHM</button>
+          </article>
+          <article class="feature-card">
+            <h3>Orbit Lab</h3>
+            <p>Animated orbits with velocity vectors and before/after comparison.</p>
+            <button class="ghost-button" type="button">Open Orbit Lab</button>
+          </article>
+          <article class="feature-card">
+            <h3>Conservation</h3>
+            <p>Momentum and energy demos with elastic vs inelastic collisions.</p>
+            <button class="ghost-button" type="button">Open Demos</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-main">
+          <h2>About Axion</h2>
+          <p>
+            Axion is built to help students visualize the laws of motion and energy through
+            clear animations, data, and graphing tools. The goal is to turn curiosity into
+            measurable understanding.
+          </p>
+          <div class="pill-list">
+            <span>Assumptions</span>
+            <span>Limitations</span>
+            <span>Numerical Errors</span>
+            <span>Changelog</span>
+          </div>
+        </div>
+        <aside class="about-aside">
+          <h3>Curiosity drives discovery</h3>
+          <p>
+            Every window is designed to make the invisible visible. Use Axion to explore
+            why the world behaves the way it does, and document what you observe.
+          </p>
+          <div class="quote-inline">"The best way to learn is to look closer."</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="docs" id="docs">
+      <div class="container docs-grid">
+        <div>
+          <h2>Research notes</h2>
+          <p>Document the assumptions and limitations of every simulation.</p>
+        </div>
+        <div class="docs-cards">
+          <div class="docs-card">
+            <h4>assumptions.md</h4>
+            <p>No air resistance, ideal springs, small-angle pendulum.</p>
+          </div>
+          <div class="docs-card">
+            <h4>limitations.md</h4>
+            <p>What breaks and why.</p>
+          </div>
+          <div class="docs-card">
+            <h4>numerical-errors.md</h4>
+            <p>Time-step sensitivity and drift.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-top">Back to top</div>
+    <div class="container footer-grid">
+      <div>
+        <h4>Get to Know</h4>
+        <a href="#about">About Axion</a>
+        <a href="#labs">Labs</a>
+        <a href="#docs">Notes</a>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Discord</a>
+      </div>
+      <div>
+        <h4>Build with Axion</h4>
+        <a href="#">Contribute</a>
+        <a href="#">Feedback</a>
+        <a href="#">Changelog</a>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <a href="#">Usage Policy</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>Axion Physics Lab</span>
+      <span>For learning and research use only. No commercial redistribution.</span>
+    </div>
+  </footer>
+
+  <div class="quote-card" id="quoteCard">
+    <p id="quote-text">"Loading science quote..."</p>
+    <span id="author-name">- Axion</span>
+  </div>
+
+  <div class="ai-fab" aria-label="Archon AI assistant">
+    <img class="ai-avatar" src="../assets/Archon_Chatbot.png" alt="Archon AI assistant" />
+    <div class="ai-text">
+      <strong>ARCHON</strong>
+      <small>AI guide</small>
+    </div>
+  </div>
+
+  <script src="../JS/app.js" defer></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
